@@ -1,0 +1,783 @@
+@charset "UTF-8";
+/* * {
+	border: 2px solid blue;
+} */
+
+
+img {
+	width: 100%;
+	max-width: 100%;
+}
+
+/* SPページ--------------------------------- */
+body {
+	font-size: .75rem;
+}
+
+.header__hero--logo {
+	width: 90%;
+}
+
+.section__catch {
+	margin-bottom: 40px;
+}
+
+.sp__none {
+	display: none;
+}
+
+.pc__none {
+	display: block;
+}
+
+/* Formosa--------------------------------- */
+.formosa {
+	margin-bottom: 20px;
+}
+
+.formosa__bg {
+	position: relative;
+	z-index: 0;
+	padding: 39.5px 10.8%;
+}
+
+.formosa__bg:first-of-type {
+	background: url(../image/Formosa_1_bg.png) no-repeat 80% -50%/ cover;
+}
+
+.formosa__bg:last-of-type {
+	background: url(../image/Formosa_2_bg.png) no-repeat 80% -50%/ cover;
+	padding-bottom: 30px;
+}
+
+/* 背景用フィルタ */
+.formosa__bg::before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background: #D9D9D9;
+	filter: opacity(70%);
+	z-index: -1;
+}
+
+/* 旗のマーク */
+.formosa__flag {
+	width: 22%;
+	position: relative;
+	z-index: 2;
+	left: 48%;
+	transform: translateX(-48%);
+	margin-bottom: 6px;
+}
+
+.formosa__flag::before {
+	content: "";
+	display: inline-block;
+	width: 52%;
+	height: 85%;
+	background: url(../image/national_flag.png)no-repeat 0%/100% 100%;
+	position: absolute;
+	top: 40%;
+	left: 55%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+}
+
+.formosa h3 {
+	padding: 20px 0;
+	line-height: 1.095rem;
+}
+
+.formosa h3 span {
+	font-size: 1.25rem;
+}
+
+
+.formosa__img {
+	padding-top: 40px;
+}
+
+.text {
+	padding: 10px 0;
+	line-height: 1.05rem;
+	display: block;
+	margin: 0 auto;
+	width: 65vw;
+}
+
+/* Gallery--------------------------------- */
+.gallery {
+	padding: 0 10.8%;
+	margin-bottom: 52px;
+}
+
+.swiper--wrapper {
+	width: 100%;
+	aspect-ratio: 295 / 468;
+}
+
+.swiper {
+	margin-bottom: 20px;
+}
+
+.swiper-slide {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 300px;
+}
+
+.swiper-pagination {
+	padding: 0 20px;
+	position: unset;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.swiper-pagination-bullet {
+	width: 18px;
+	height: 18px;
+	background: #000;
+	margin: 0;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 2.7%
+}
+
+
+
+/* Travel--------------------------------- */
+.travel {
+	margin-bottom: 45px;
+}
+
+.travel p.text {
+	padding: 20px 0;
+}
+
+.travel__map {
+	width: 62%;
+	aspect-ratio: 233 / 422;
+	margin: 45px auto 0;
+	position: relative;
+	background: url(../image/map.png)no-repeat 67% 12%/76% 79%;
+}
+
+.travel__map::after {
+	content: "";
+	display: block;
+	background: url(../image/frag_map.png)no-repeat 0/100% 100%;
+	width: 43.5%;
+	height: 23%;
+	position: absolute;
+	right: 10%;
+	bottom: 22%;
+}
+
+.travel__map__taichung,
+.travel__map__taipei,
+.travel__map__tainan {
+	position: absolute;
+	width: 28.3%;
+}
+
+.travel__map__taichung a::after,
+.travel__map__taipei a::after,
+.travel__map__tainan a::after {
+	content: "";
+	display: block;
+	background: url(../image/map_pin.png)no-repeat 0%/100% 100%;
+	width: 45%;
+	height: 35%;
+	position: absolute;
+}
+
+.travel__map__taichung {
+	left: 0;
+	top: 11.5%;
+}
+
+.travel__map__taichung a::after {
+	top: 32%;
+	left: 118%;
+}
+
+.travel__map__taipei {
+	right: 0;
+	top: 13.5%;
+}
+
+.travel__map__taipei a::after {
+	right: 65%;
+	top: -44.5%;
+}
+
+.travel__map__tainan {
+	left: 18%;
+	bottom: 1.5%;
+}
+
+.travel__map__tainan a::after {
+	left: 28%;
+	bottom: 106%;
+}
+
+/* Event--------------------------------- */
+.event {
+	padding: 0 20px;
+}
+
+.event .section__catch {
+	height: 70px;
+
+}
+
+.event__rantan {
+	padding-top: 44px;
+}
+
+
+.event h3 {
+	display: inline-block;
+	font-size: 1.25rem;
+	padding: 3px;
+	background: #f4f4f4;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, 30%);
+	width: 82.5%;
+}
+
+.event__rantan__img,
+.event__countdown__img {
+	position: relative;
+}
+
+.event__flex>p:first-of-type {
+	margin-top: 30px;
+	line-height: 1.08rem;
+}
+
+.event__flex>p.text {
+	padding: 21px 0 18px;
+}
+
+.event span {
+	font-weight: 700;
+}
+
+.event__countdown {
+	margin-top: 40px;
+	padding-top: 90px;
+}
+
+.event__countdown__img>h3 {
+	transform: translate(-50.5%, 70%);
+	line-height: 1.82rem;
+	width: 75%;
+}
+
+.event__countdown .event__flex>p:first-of-type {
+	margin-top: 62px;
+	line-height: 1.08rem;
+}
+
+.event__countdown>p.text {
+	padding: 21px 0 18px;
+}
+
+.event__rantan__img::after,
+.event__countdown__img::after {
+	content: "";
+	display: block;
+	width: 34.2%;
+	height: 46%;
+	background: url(../image/flower.png)no-repeat 0%/100% 100%;
+	position: absolute;
+	top: -32%;
+	right: 0;
+	transform: rotate(30deg)
+}
+
+.event__countdown__img::after {
+	width: 34.1%;
+	height: 40%;
+	transform: scale(-1, 1);
+	transform: rotate(-30deg);
+	top: -30.5%;
+	left: 0;
+}
+
+
+/* Information--------------------------------- */
+.information {
+	padding: 0 20px;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+
+.information__wrapper {
+	border: 1px solid #8F8F8F;
+}
+
+.information__text__wrapper {
+	padding: 23px 24px 25px 23px;
+}
+
+.information h3 {
+	font-size: 1.25rem;
+	padding-top: 12px;
+}
+
+.information li,
+.information p {
+	text-align: start;
+	line-height: 1.25rem;
+}
+
+.information li::before,
+.information p::before {
+	content: "■";
+}
+
+.pb {
+	padding-bottom: 20px;
+}
+
+
+
+
+/* PCページ--------------------------------- */
+@media screen and (min-width: 768px) {
+
+	body {
+		font-size: 1.125rem;
+	}
+
+	.header__hero--logo {
+		width: 57%;
+		aspect-ratio: 780 / 317;
+		left: 45.5%;
+		top: 46.5%;
+		transform: translate(-50%, -50%);
+	}
+
+	.pc__none {
+		display: none;
+	}
+
+	.sp__none {
+		display: block;
+	}
+
+	/* Formosa--------------------------------- */
+	.formosa {
+		margin-bottom: unset;
+	}
+
+	.formosa__bg {
+		padding: 0 103px;
+		position: relative;
+		z-index: 0;
+		aspect-ratio: 683 / 225;
+	}
+
+	.formosa__bg:first-of-type {
+		padding-top: 19px;
+		background: url(../image/Formosa_1_bg.png) no-repeat 0% 50%/ cover;
+		display: grid;
+		grid-template: 30% 70% / 40% 60%;
+		grid-template-areas:
+			"flag img"
+			"text img";
+		align-items: center;
+	}
+
+	.formosa__bg:first-of-type .formosa__flag {
+		grid-area: flag;
+		width: 58.7%;
+		aspect-ratio: 91 / 37;
+		position: relative;
+		z-index: 2;
+		left: 28%;
+		top: -3%;
+		margin-bottom: 6px;
+	}
+
+	.formosa__bg:first-of-type h3 {
+		grid-area: text;
+		display: inline-block;
+		line-height: 2.8rem;
+		font-size: 2rem;
+		width: 386px;
+		text-align: start;
+		margin-top: -17px;
+		padding: 0 0 36px;
+		border-bottom: 1px solid #000;
+	}
+
+	.formosa h3 span {
+		font-size: 3rem;
+	}
+
+	.formosa__bg:first-of-type .formosa__img {
+		grid-area: img;
+		padding: unset;
+		width: 91.5%;
+		aspect-ratio: 318 / 149;
+		justify-self: end;
+	}
+
+	.formosa__bg:last-of-type {
+		background: url(../image/Formosa_2_bg.png) no-repeat 0% 50%/ cover;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 50px;
+		/* padding-bottom: 30px; */
+	}
+
+	.formosa__bg:last-of-type .formosa__img {
+		width: 55%;
+		aspect-ratio: 318 / 150;
+		padding: unset;
+	}
+
+	.formosa__bg:last-of-type img {
+		object-fit: cover;
+	}
+
+	.formosa__bg:last-of-type .text {
+		padding: 40px 12px;
+		line-height: 1.6rem;
+		margin: -22px 22px 0 0;
+		width: 420px;
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+		position: relative;
+		right: 0;
+	}
+
+	/* Gallery--------------------------------- */
+	.gallery {
+		padding: 15px 103px 0;
+		margin-bottom: 52px;
+		background: #E2E2E2;
+	}
+
+	.border {
+		width: 43%;
+		margin: 58px auto 110px;
+	}
+
+	.gallery .section__catch {
+		margin-left: calc(100% - (668px + 0px));
+	}
+
+	.swiper--wrapper {
+		aspect-ratio: 91 / 37;
+	}
+
+	.swiper {
+		margin-bottom: 20px;
+	}
+
+	.swiper-pagination {
+		padding: 63px 20px 42px;
+		justify-content: center;
+	}
+
+	.swiper-pagination-bullet {
+		width: 28px;
+		height: 28px;
+		margin: 0px;
+	}
+
+	.swiper-pagination-bullet:first-child {
+		margin: 0;
+	}
+
+	/* Travel--------------------------------- */
+	.travel {
+		margin-top: 60px;
+		padding: 100px 103px 0;
+		margin-bottom: 45px;
+	}
+
+	.travel .section__catch {
+		margin-left: 0;
+	}
+
+	.travel__grid {
+		width: 100%;
+		aspect-ratio: 1100 / 733;
+		display: grid;
+		grid-template: 40% 60% / 50% 50%;
+		grid-template-areas:
+			"text map"
+			"grid map";
+		align-items: center;
+	}
+
+
+	.travel__grid__child {
+		grid-area: grid;
+		display: grid;
+		grid-template: 48% 48%/ 48% 48%;
+		gap: 23px;
+		grid-template-areas:
+			"img1 img2"
+			"img3 img4";
+		align-items: start;
+		object-fit: scale-down;
+		padding-top: 10px;
+	}
+
+	.travel__grid__child img {
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	}
+
+	.travel .text {
+		grid-area: text;
+		display: block;
+		padding: 40px 5px;
+		width: 420px;
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+		justify-self: start;
+		margin: 40px 0 0 20px;
+		line-height: 1.5rem;
+		align-self: start;
+	}
+
+	.travel__map {
+		grid-area: map;
+		width: 61%;
+		aspect-ratio: 229 / 368;
+		margin: unset;
+		margin-left: calc(100% - (63% + 5%));
+		margin-top: -180px;
+		position: relative;
+		background: url(../image/map.png)no-repeat 79% 40%/76% 88.5%;
+	}
+
+	.travel__map::after {
+		content: "";
+		display: block;
+		background: url(../image/frag_map.png)no-repeat 0/100% 100%;
+		width: 43.3%;
+		height: 25.8%;
+		position: absolute;
+		right: 7%;
+		bottom: 11%;
+	}
+
+
+	.travel__map__taichung {
+		left: 0;
+		top: 20%;
+	}
+
+	.travel__map__taichung a::after {
+		top: 19%;
+		left: 125%;
+	}
+
+	.travel__map__taipei {
+		right: 9%;
+		top: 15%;
+	}
+
+	.travel__map__taipei a::after {
+		right: 26%;
+		top: -39%;
+	}
+
+	.travel__map__tainan {
+		left: -4.25%;
+		bottom: 0;
+	}
+
+	.travel__map__tainan a::after {
+		left: 115%;
+		bottom: 74%;
+	}
+
+	/* Event--------------------------------- */
+	.event {
+		margin-top: 235px;
+		padding: 0 7.54%
+	}
+
+	.event .section__catch {
+		height: 132px;
+		margin-left: calc(100% - (668px + 0px));
+	}
+
+	.event__rantan,
+	.event__countdown {
+		padding-top: 230px;
+		display: flex;
+	}
+
+	.event__countdown {
+		flex-direction: row-reverse;
+		padding-top: 260px;
+	}
+
+	.event h3 {
+		display: block;
+		height: 40px;
+		font-size: 2.5rem;
+		padding: 3px;
+		background: unset;
+		position: absolute;
+		top: -95px;
+		left: calc(100% - 22%);
+		transform: unset;
+		width: 70%;
+	}
+
+	.event__countdown h3 {
+		text-align: start;
+		line-height: 3.5rem;
+		left: unset;
+		right: calc(100% - 28%);
+		top: -155px;
+	}
+
+	.event__rantan__img,
+	.event__countdown__img {
+		width: 68.8%;
+	}
+
+	.event__hidden__imgpc {
+		width: 100%;
+		aspect-ratio: 399 / 179;
+		overflow: hidden;
+	}
+
+	.event img {
+		transform: translateY(-50px);
+	}
+
+	.event__countdown img {
+		transform: translateY(-85px);
+	}
+
+	.event__flex {
+		width: 31.2%;
+		padding: 0 3.88% 0 5%;
+	}
+
+	.event__countdown {
+		transform: translateX(-2.5%);
+	}
+
+	.event__countdown .event__flex {
+		padding: 0 0 0 3.5%;
+	}
+
+
+	.event__flex>p:first-of-type {
+		display: block;
+		width: 258px;
+		margin: 18px auto 0;
+		line-height: 1.7rem;
+	}
+
+	.event__flex>p.text {
+		display: block;
+		line-height: 1.7rem;
+		width: 258px;
+		margin-top: 50px;
+		padding: 0;
+	}
+
+	.event span {
+		font-weight: 700;
+	}
+
+	.event__rantan__img::after,
+	.event__countdown__img::after {
+		width: 39%;
+		height: 67%;
+		top: -60%;
+		left: 0;
+		transform: scale(-1, 1);
+		transform: rotate(-30deg)
+	}
+
+	.event__countdown__img::after {
+		width: 39%;
+		height: 67%;
+		transform: scale(1, 1);
+		transform: rotate(30deg);
+		top: -58%;
+		left: unset;
+		right: 0;
+	}
+
+	/* Information--------------------------------- */
+	.information {
+		padding: 0 20px;
+		margin-top: 90px;
+		margin-bottom: 50px;
+	}
+
+	.information__wrapper {
+		border: 1px solid #8F8F8F;
+		max-width: 1068px;
+		margin: 0 auto;
+	}
+
+	.information__text__wrapper {
+		display: flex;
+		padding: 0;
+		margin: 55px 100px 60px;
+	}
+
+	.information h3 {
+		font-size: 2.5rem;
+		padding-top: 40px;
+	}
+
+	.information ul {
+		width: 57%;
+	}
+
+	.information__flex {
+		width: 43%;
+	}
+
+
+	.information li,
+	.information p {
+		text-align: start;
+		line-height: 2.25rem;
+	}
+
+	.yohaku {
+		padding-left: 1.15rem;
+		text-align: start;
+		display: block;
+	}
+
+
+	.information li::before,
+	.information p::before {
+		content: "■";
+	}
+
+	.pb {
+		padding-bottom: 35px;
+	}
+}

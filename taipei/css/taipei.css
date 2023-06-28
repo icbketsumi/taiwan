@@ -1,0 +1,515 @@
+@charset "UTF-8";
+/*///////////// メニュー //////////////*/
+/* 改善の余地有*/
+/* 要位置調整 */
+/* 確認 */
+/* 未解決 */
+
+/*////////// メニュー終わり //////////*/
+
+.header__hero--pc {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 要位置調整 */
+.header__hero__txt {
+  line-height: 1.25rem;
+  text-align: center;
+  top: 81.5%;
+}
+
+.attraction__text__wrap1,
+.attraction__text__wrap2 {
+  background: rgba(108, 186, 216, 0.2);
+}
+
+
+/*/////////////// Attraction セクション ///////////////*/
+p.attraction__text__wrap1 {
+  max-width: 86.5%;
+  padding: 115px 24px 10px;
+}
+
+.attraction{
+  max-width: 670px;
+}
+/* .attraction__inner {
+  max-width: 90%;
+  margin: 0 auto;
+} */
+/* .img__jouhun--main {
+  max-width: 86.9%;
+} */
+/* .attraction__main {
+  width: 96.5%;
+  text-align: left;
+} */
+
+/*/////////////// 九份画像 ///////////////*/
+/* 未解決 クラス認識させる*/
+/* .attraction__inner .attraction__name.right{
+  padding: 10px 27px;
+} */
+/* 画像3枚の親要素 */
+.attraction__img--jouhun {
+  display: grid;
+  grid-template-columns: 42% 54%;
+  /* grid-template-rows: 48.5% 48.5%; */
+  column-gap: 4%;
+  row-gap: 5%;
+  /* object-fit: cover; */
+  margin-left: 3%;
+}
+
+/* attraction__img--jouhunの子要素 */
+#jouhun__itm1 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+#jouhun__itm2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+#jouhun__itm3 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.attraction__text__wrap2{
+  width: 97%;
+  margin-left: 3%;
+} 
+
+/*/////////////// 九份画像終わり ///////////////*/
+
+/*/////////////// 101画像 ///////////////*/
+.attraction__name{
+  letter-spacing:normal;
+}
+
+.attraction__name.right{
+  margin-top: -12px;
+}
+
+
+.attraction__main.right{
+  margin-bottom: -81px;
+  margin-top: 22px;
+}
+
+.attraction__text__wrap2.right{
+  justify-content: center;
+}
+
+/* aspect-ratioプロパティ使うかも */
+.attraction__img--101 {
+  /* max-height: 245px; */
+  display: grid;
+  grid-template-columns: 54% 42%;
+  column-gap: 4%;
+  row-gap: 5%;
+  margin-left: 3%;
+  /* object-fit: cover; */
+}
+
+/* attraction__img--101の子要素 */
+#taipei101__itm1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#taipei101__itm2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+#taipei101__itm3 {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+/*/////////////// 101画像終わり ///////////////*/
+
+
+
+/*/////////////// Attraction セクション終わり ///////////////*/
+
+
+/*/////////////// Night Market セクション ///////////////*/
+.night-market__inner {
+  max-width: 86.7%;
+  margin: 0 auto;
+}
+
+/* 未解決 */
+.night-market__inner .section__catch {
+  margin-bottom: 41px;
+}
+
+/* ボタン、画像のFlexコンテナ アイテムは①②*/
+.night-market__text {
+  padding: 20px 0;
+  max-width: 76%;
+  font-size: 0.75rem;
+  margin: 0 auto;
+}
+
+.night-market__area {
+  display: flex;
+  gap: 0 9%;
+  margin-top: 40px;
+}
+
+/* Night Market ボタン */
+/* .night-market__areaのFlexアイテム① */
+.night-market__btn {
+  display: flex;
+  flex-direction: column;
+  gap: 9.2vw 0%;
+  max-width: 41.3%;
+  margin-bottom: 40px;
+}
+
+.night-market__btn--itm {
+  position: relative;
+}
+
+.night-market__btn--itm a:hover{
+color: rgba(108, 186, 216, 1);
+}
+
+.night-market__btn--text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 13px;/* IE対策 */
+  /* font-size: clamp(12px,,20px);
+  font-weight: 700; */
+  width: 100%;
+
+}
+
+/* .night-market__areaのFlexアイテム② */
+.night-market__img {
+  flex-direction: column;
+  max-width: 40%;
+  /* 試しのrelative */
+  position: relative;
+}
+
+.night-market__btn--itm a img:hover{
+  color: rgba(108, 186, 216, 1);
+}
+
+/* .night-market__areaの子要素画像 */
+/* 重なりの比率を維持する */
+/* 改善の余地有*/
+
+.night-market__img6 {
+  display: none;
+}
+
+.night-market__img1 {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+.night-market__img2 {
+  position: absolute;
+  z-index: 90;
+  top: 18.9vw;
+  left: 9vw;
+}
+
+.night-market__img3 {
+  position: absolute;
+  z-index: 80;
+  top: 37.8vw;
+  left: 0px;
+}
+
+.night-market__img4 {
+  position: absolute;
+  z-index: 70;
+  top: 56.7vw;
+  left: 9vw;
+}
+
+/* 未解決 */
+/* 5枚目にabsoluteを設定すると画像が消えてしまう　heightがbtn要素を超えるから？ */
+.night-market__img5 {
+  position: relative;
+  z-index: 60;
+  top: 75.6vw;
+  left: 0px;
+}
+
+/* .night-market__areaの子要素画像 終わり*/
+
+
+
+
+
+/* .night-market__img--text {
+  font-size: ;
+} */
+
+
+/* モーダル用 */
+.modal-layer, .modal-layer2, .modal-layer3, .modal-layer4 {
+  visibility: hidden;
+  background: grey;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+/* モーダル用終わり */
+
+
+/*/////////////// Night Market セクション終わり ///////////////*/
+
+/*/////////////// Access セクション始まり ///////////////*/
+.access h3{
+  margin-top: 40px;
+}
+
+.border__ac1{
+  width: 59vw;
+  border-bottom: 1px solid;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.border__ac2{
+  width: 59vw;
+  border-bottom: 1px solid;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.access__inner {
+  max-width: 90%;
+  margin: 20px auto 40px;
+}
+
+
+/* 確認　initialは使っていいのか？ */
+.access__container {
+  display: initial;
+  display: flex;
+  flex-flow: column;
+  row-gap: 20px;
+}
+
+.access-itm {
+  text-align: initial;
+  font-size: 10px;
+  width: 296px;
+}
+
+.card__position {
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 82px;
+}
+
+.access__last{
+  margin-bottom: 40px;
+}
+
+/*/////////////// Access セクション終わり ///////////////*/
+
+.inquiry {
+  margin: 0px auto 37.5px;
+}
+.footer {
+  height: 124px;
+}
+
+
+.footer__logo--img {
+    width: 20%;
+}
+
+
+/* @@@@@@@@@@@@@@@PC対応@@@@@@@@@@@@@@@ */
+
+@media screen and (min-width: 768px){
+
+  .container{
+  max-width: 1366px;
+  margin: 0 auto;
+  }
+  .siteplace {
+    font-size: 1.5rem;
+  }
+
+  .header__hero__txt {
+    font-size: 1.4rem;
+    text-align: center;
+    top: 81.5%;
+    line-height: 35px;
+    font-weight: 400;
+  }
+  /*/////////////// (PC)Attraction セクション ///////////////*/
+
+ /*/////////////// 九份画像 ///////////////*/
+
+  #jouhun__itm1 {
+    display: none;
+  }
+
+  .attraction__name {
+    display: inline-block;
+    background: #f4f4f4;
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: .3em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    margin-bottom: -23px;
+}
+
+.attraction__img--jouhun {
+  display: grid;
+  grid-template-columns: 254px 254px;
+  column-gap: 4%;
+  row-gap: 5%;
+  /* object-fit: cover; */
+  margin-left: 3%;
+}
+
+#jouhun__itm2 {
+  grid-column: 1/1;
+  grid-row: 1/2;
+}
+
+#jouhun__itm3 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+ /*/////////////// 九份画像終わり ///////////////*/
+
+
+
+  /*/////////////// (PC)Attraction セクション終わり ///////////////*/
+  /*/////////////// (PC)Night Market セクション ///////////////*/
+
+  .attraction {
+    max-width: 1366px;
+    padding: 0;
+}
+
+
+img.attraction__main {
+  max-width: 533px;
+  margin-left: 16.5%;
+}
+
+.wrap1dec {
+  max-width: 978px;
+  background-color: rgba(108, 186, 216, 0.2);
+}
+
+.attraction__text__wrap1 {
+  background: rgba(0, 0, 0, 0);
+}
+
+p.attraction__text__wrap1 {
+  max-width: 400px;
+  padding: 0px;
+}
+* 
+
+  .night-market__text {
+    padding: 20px 0;
+    max-width: 76%;
+    font-size: 0.75rem;
+    margin: 0 auto;
+  }
+
+  /* ボタン、画像のFlexコンテナ アイテムは①②*/
+  .night-market__area {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Night Market ボタン */
+  /* .night-market__areaのFlexアイテム① */
+  .night-market__btn {
+    display: flex;
+    flex-direction: row;
+    gap: 0 50px;
+    margin: 14.3% auto;
+    /* .night-market__areaの順番入れ替え */
+    order: 2;
+  }
+
+  .night-market__btn--itm {
+    flex-basis: 206px ;
+  }
+
+  
+
+  /* .night-market__areaのFlexアイテム② */
+  .night-market__img {
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-image: url(/taipei/image/nightmarket_bg_pc.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    max-width: 100%;
+  }
+
+  /* .night-market__areaの子要素画像 */
+
+  .night-market__img img {
+    position: static
+  }
+
+  .night-market__img6 {
+    display: block;
+  }
+
+  /* .night-market__img1 {}
+
+  .night-market__img2 {}
+
+  .night-market__img3 {}
+
+  .night-market__img4 {}
+
+  .night-market__img5 {} */
+
+  /* .night-market__areaの子要素画像 終わり*/
+
+
+
+
+
+  /*/////////////// (PC)Night Market セクション終わり ///////////////*/
+}

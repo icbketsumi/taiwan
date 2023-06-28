@@ -1,0 +1,325 @@
+@charset "UTF-8";
+
+img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.txt12 {
+	font-size: .75rem;
+}
+
+.txt14 {
+	font-size: .875rem;
+}
+
+.txt20 {
+	font-size: 1.25rem;
+}
+
+
+/* SPページ */
+.header__hero--logo {
+	width: 58.2%;
+}
+
+.header__hero__txt {
+	transform: translate(1%, -28.5%);
+	line-height: 1.25rem;
+}
+
+
+.attraction__text__wrap1,
+.attraction__text__wrap2 {
+	background: #64C99B33;
+}
+
+
+/* Attraction--------------------------------- */
+.attraction__text__wrap1.left {
+	padding-top: 131px;
+	padding: 131px 22px 50px 18px;
+	line-height: 1.06rem;
+}
+
+
+.attraction__contents--wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+	margin-top: -40px;
+}
+
+.attraction__contents--wrap>img:first-of-type {
+	width: 36.5%;
+	position: relative;
+	z-index: 2;
+}
+
+.attraction__contents--wrap>img:last-of-type {
+	width: 55.25%;
+}
+
+.attraction__contents--wrap2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.attraction__contents--wrap2>img:first-of-type {
+	position: relative;
+	z-index: 2;
+	margin-top: -17px;
+	width: 72%;
+	align-self: flex-end;
+}
+
+.attraction__contents--wrap2>img:last-of-type {
+	margin-top: -61px;
+	width: 48.5%;
+	align-self: flex-start;
+}
+
+
+
+
+
+/* Gourmet--------------------------------- */
+.gourmet>p {
+	display: inline-block;
+	width: 66%;
+	margin: 20px 0;
+	line-height: 1.25rem;
+}
+
+.gourmet>p:first-of-type {
+	padding: 18px 0 0 0;
+	margin-bottom: 10px;
+	line-height: 1.4rem;
+}
+
+.gourmet p:nth-of-type(4) {
+	width: 68%;
+}
+
+.gourmet>p:last-of-type {
+	width: 71%;
+	padding: 2px 0 0;
+}
+
+.gourmet__banner {
+	width: 100%;
+	aspect-ratio: 75 / 26;
+	padding: 6px 5.3%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: no-repeat center/cover;
+}
+
+.gourmet .border {
+	margin-bottom: 30px;
+}
+
+.gourmet__banner--wrap {
+	width: 55%;
+	padding-top: 6px;
+}
+
+.gourmet__banner img {
+	height: 100%;
+	width: auto;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.gourmet__banner--style {
+	/* -webkit-text-stroke: .05px #ffffff80; */
+	text-shadow: .5px .5px 0 #ffffff80, -.5px -.5px 0 #ffffff80,
+		-.5px .5px 0 #ffffff80, .5px -.5px 0 #ffffff80,
+		0px .5px 0 #ffffff80, -.5px 0 #ffffff80,
+		-.5px 0 0 #ffffff80, .5px 0 0 #ffffff80;
+	display: block;
+	line-height: 2rem;
+}
+
+.gourmet__banner--style span {
+	font-size: 2rem;
+}
+
+.gourmet .border:last-of-type {
+	margin: 30px auto 40px;
+
+}
+
+/* ポップアップ--------------------------------- */
+
+.gourmet__Pop {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 2000;
+	width: 100%;
+	height: 100dvh;
+	display: flex;
+	align-items: center;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.gourmet__Pop.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.gourmet__Pop__inner {
+	background-color: #00000033;
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.gourmet__Pop__image {
+	width: 75.5%;
+	aspect-ratio: 1 / 1;
+}
+
+.gourmet__Pop__image img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+.gourmet__Pop.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.gourmet__Pop__button {
+	position: absolute;
+	right: 16px;
+	top: 10px;
+	width: 7.5%;
+	aspect-ratio: 1 / 1;
+	cursor: pointer;
+}
+
+.gourmet__Pop__button::before,
+.gourmet__Pop__button::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 27%;
+	aspect-ratio: 7 / 32;
+	background: #000;
+}
+
+.gourmet__Pop__button::before {
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.gourmet__Pop__button::after {
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
+
+/* Pick Up--------------------------------- */
+.pickup {
+	padding: 0 20px;
+}
+
+.pickup h3 {
+	font-size: 1.5rem;
+	padding: 40px 0 13px;
+}
+
+.pickup>p {
+	display: inline-block;
+	width: 74%;
+	padding: 20px 0;
+	line-height: 1.08rem;
+}
+
+.pickup>p:first-of-type {
+	padding-top: 9px;
+}
+
+.pickup>p:nth-last-of-type(2) {
+	width: 68%;
+}
+
+.pickup>img:first-of-type {
+	width: 63%;
+}
+
+.pickup__img--wrap {
+	margin-top: -2px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.wrap1>img {
+	width: 31.6%;
+}
+
+.wrap2>img:first-of-type {
+	width: 42%;
+}
+
+.wrap2>img:last-of-type {
+	padding-top: 6px;
+	width: 54%;
+}
+
+.pickup>img:last-of-type {
+	width: 44.8%;
+}
+
+.pickup .border:last-of-type {
+	margin: 39px auto 40px;
+}
+
+
+.inquiry {
+	margin-bottom: 40px;
+}
+
+
+
+
+/* PCページ------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+
+	/*  */
+
+	.header__hero--logo {
+		width: 20%;
+	}
+
+	.header__hero__txt {
+		line-height: 2.15rem;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
